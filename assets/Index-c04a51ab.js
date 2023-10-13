@@ -1,0 +1,1 @@
+import{_ as a,r as e,o as _,c as d,b as t,w as n,F as s,d as o}from"./index-8137fef8.js";const r={};function u(m,f){const c=e("md-outlined-button"),l=e("md-filled-button");return _(),d(s,null,[t(c,null,{default:n(()=>[o("Back")]),_:1}),t(l,null,{default:n(()=>[o("Complete")]),_:1})],64)}const p=a(r,[["render",u]]);export{p as default};

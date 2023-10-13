@@ -1,0 +1,1 @@
+import{_ as t,o,c as n,F as a,a as e}from"./index-8137fef8.js";const c={},s=e("h1",null,"Vue Material Web",-1),r=e("h2",null,"Vite + Vue + TS",-1),l=e("h3",null,"The official web component set for Material 3",-1);function _(i,f){return o(),n(a,null,[s,r,l],64)}const d=t(c,[["render",_]]);export{d as default};
