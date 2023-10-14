@@ -1,0 +1,1 @@
+import{_ as t,o as n,c as o,F as s,a as e}from"./index-4d9f199d.js";const a={},c=e("h1",null,"Vue Material Web",-1),r=e("h2",null,"项目基于Vite + Vue + TS搭建",-1),_=e("h3",null,"Web Components（Material Web）组件在Vue中的使用",-1);function l(u,i){return n(),o(s,null,[c,r,_],64)}const h=t(a,[["render",l]]);export{h as default};
