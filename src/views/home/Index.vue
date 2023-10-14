@@ -3,8 +3,8 @@
 
 <template>
   <h1>Vue Material Web</h1>
-  <h2>Vite + Vue + TS</h2>
-  <h3>The official web component set for Material 3</h3>
+  <h2>项目基于Vite + Vue + TS搭建</h2>
+  <h3>Web Components（Material Web）组件在Vue中的使用</h3>
 </template>
 
 <style scoped></style>
