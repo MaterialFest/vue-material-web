@@ -2,9 +2,10 @@
 const aboutRouterList = [
   { url: '/about/intro', name: '介绍' },
   { url: '/about/quick-start', name: '快速上手' },
+  { url: '/about/resources', name: '资源' },
 ];
 const componentRouterList = [
-  { url: '/components/button', name: 'Button 按钮' },
+  { url: '/components/button', name: 'Buttons 按钮' },
   { url: '/components', name: 'Checkbox 多选框' },
   { url: './chips', name: 'Chips' },
   { url: './dialogs', name: 'Dialogs' },
@@ -41,9 +42,19 @@ const componentRouterList = [
   </md-list>
 </template>
 
-<style scoped>
+<style scoped lang="scss">
 .menu-list {
   margin: 0 12px;
+
+  a {
+    margin-block: 5px;
+  }
+
+  md-item {
+    margin-top: 10px;
+    font-size: 20px;
+    font-weight: 600;
+  }
 }
 
 .menu-list-item {

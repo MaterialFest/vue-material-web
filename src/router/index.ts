@@ -4,7 +4,7 @@ const routes = [
   {
     path: '/',
     name: 'Home',
-    component: () => import('../views/home/Index.vue'),
+    component: () => import('../views/home/index.md'),
   },
   {
     path: '/about',
@@ -21,6 +21,11 @@ const routes = [
         name: 'QuickStart',
         component: () => import('../views/about/quick-start/Index.vue'),
       },
+      {
+        path: 'resources',
+        name: 'Resources',
+        component: () => import('../views/about/resources.md'),
+      },
     ]
   },
   {
@@ -29,11 +34,20 @@ const routes = [
     component: () => import('../views/components/Index.vue'),
     children: [
       {
+        path: '',
+        redirect: '/components/button',
+      },
+      {
         path: 'button',
         name: 'Button',
-        component: () => import('../views/components/button/Index.vue'),
+        component: () => import('../views/components/button/index.md'),
       },
     ]
+  },
+  {
+    path: '/docs/blog',
+    name: 'DocsBlog',
+    component: () => import('../views/docs/blog/index.md'),
   }
 ]
 

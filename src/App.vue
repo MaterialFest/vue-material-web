@@ -20,8 +20,15 @@ import Menu from './views/layout/Menu.vue';
         </router-link>
       </div>
       <div class="layout-header-right">
+        <router-link to="/components">
+          <md-text-button>组件</md-text-button>
+        </router-link>
+        <router-link to="/docs/blog">
+          <md-text-button>博客</md-text-button>
+        </router-link>
         <a href="https://www.github.com/MaterialFE/vue-material-web/" target="_blank">
-          <md-text-button has-icon>
+          <md-text-button trailing-icon>
+            github
             <svg slot="icon" viewBox="0 0 48 48">
               <path
                 d="M9 42q-1.2 0-2.1-.9Q6 40.2 6 39V9q0-1.2.9-2.1Q7.8 6 9 6h13.95v3H9v30h30V25.05h3V39q0 1.2-.9 2.1-.9.9-2.1.9Zm10.1-10.95L17 28.9 36.9 9H25.95V6H42v16.05h-3v-10.9Z" />
@@ -74,5 +81,20 @@ import Menu from './views/layout/Menu.vue';
   padding: 2rem;
   border-radius: 28px;
   background-color: #ffffff;
+}
+</style>
+
+<style lang="scss">
+md-text-button::shadow .button {
+  background: #f2eaf8;
+}
+
+md-text-button {
+  border: 1px solid transparent;
+}
+
+.router-link-active md-text-button {
+  border: 1px solid #6750a4;
+  border-radius: 20px;
 }
 </style>
