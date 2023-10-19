@@ -2,12 +2,6 @@
 </script>
 
 <template>
-  <md-icon>expand_more</md-icon>
-  <md-icon>expand_less</md-icon>
-  <md-icon-button>
-    <md-icon>check</md-icon>
-  </md-icon-button>
-
   <md-outlined-button>Back</md-outlined-button>
   <md-filled-button>Complete</md-filled-button>
   <md-text-button trailing-icon>

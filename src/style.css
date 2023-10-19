@@ -34,12 +34,6 @@ h1 {
 
 #app {}
 
-.source-section {
-  border: 1px solid #707882;
-  padding: 20px;
-  border-radius: 20px;
-}
-
 @media (prefers-color-scheme: light) {
   :root {
     color: #213547;

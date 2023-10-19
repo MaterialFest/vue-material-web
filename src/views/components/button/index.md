@@ -19,8 +19,4 @@ There are five types of common buttons: elevated, filled, filled tonal, outlined
 4. Outlined button
 5. Text button
 
-<br/>
-<div class="source-section">
-  <ButtonType/>
-  <Preview comp-name="button" demo-name="ButtonType" />
-</div>
+<Preview :comp="ButtonType" comp-path="button/ButtonType" />

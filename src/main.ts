@@ -10,7 +10,12 @@ import '@material/web/button/outlined-button.js'
 import '@material/web/button/text-button.js'
 import '@material/web/iconbutton/icon-button.js'
 import '@material/web/icon/icon.js'
+// 引入代码高亮highlight.js
+import 'highlight.js/styles/stackoverflow-light.css'
+import 'highlight.js/lib/common'
+import hljsVuePlugin from "@highlightjs/vue-plugin"
 
 createApp(App)
   .use(router)
+  .use(hljsVuePlugin)
   .mount('#app')

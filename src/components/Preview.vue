@@ -1,60 +1,76 @@
 <template>
-  <div class="preview-tab">
-    <div class="pre-code-box">
-      <transition name="slide-fade">
-        <pre class="language-html" v-if="showCode">
-          <code class="language-html">{{ sourceCode }}</code>
-        </pre>
-      </transition>
-      <div class="showCode" @click="showOrhideCode">
-        <i :class="iconClass"></i>
-        <span>{{ showCode ? "隐藏代码" : "显示代码" }}</span>
+  <div class="preview-section">
+    <component :is="props.comp"></component>
+    <div class="preview-tab">
+      <div class="preview-btn">
+        <md-icon-button @click="showOrhideCode">
+          <md-icon>code</md-icon>
+        </md-icon-button>
+        <md-icon-button @click="copyContent(sourceCode)">
+          <md-icon>content_copy</md-icon>
+        </md-icon-button>
       </div>
+      <transition name="slide-fade">
+        <highlightjs language="js" :code="sourceCode" v-if="showCode" />
+      </transition>
     </div>
   </div>
 </template>
    
 <script setup lang="ts">
-import { computed, onMounted, ref } from "vue";
+import { onMounted, ref } from "vue"
+import 'highlight.js/lib/common'
+import hljsVuePlugin from "@highlightjs/vue-plugin"
+
+const highlightjs = hljsVuePlugin.component
 
 const props = defineProps({
-  compName: {
+  comp: null,
+  compPath: {
     type: String,
     default: "",
     require: true,
   },
-  demoName: {
-    type: String,
-    default: "",
-    require: true,
-  },
-});
+})
 
-const showCode = ref(false);
-const sourceCode = ref("");
-
-const iconClass = computed(() => {
-  return [
-    "iconfont",
-    showCode.value ? "icon-arrow-up-filling" : "icon-arrow-down-filling",
-  ];
-});
+const showCode = ref(false)
+const sourceCode = ref("")
 
 const showOrhideCode = () => {
-  showCode.value = !showCode.value;
-};
+  showCode.value = !showCode.value
+}
+
+const copyContent = (text: string) => {
+  navigator.clipboard.writeText(text)
+}
 
 const getSourceCode = async () => {
-  console.log(123)
-  console.log(props)
   let msg = await import(
-      /* @vite-ignore */ `/src/views/components/${props.compName}/${props.demoName}.vue?raw`
-  );
-  // console.log(msg.default);
-  sourceCode.value = msg.default;
+      /* @vite-ignore */ `/src/views/components/${props.compPath}.vue?raw`
+  )
+  sourceCode.value = msg.default
 };
 
 onMounted(() => {
   getSourceCode();
-});
+})
 </script>
+
+<style scoped lang="scss">
+.preview-section {
+  border: 1px solid #707882;
+  padding: 20px;
+  border-radius: 20px;
+}
+
+.preview-btn {
+  text-align: right;
+  border-top: 1px dashed #707882;
+  margin-top: 10px;
+  padding-top: 10px;
+}
+
+pre {
+  margin-bottom: 0;
+}
+</style>
