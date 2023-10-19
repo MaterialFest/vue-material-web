@@ -1,0 +1,13 @@
+:root{font-family:Inter,system-ui,Avenir,Helvetica,Arial,sans-serif;line-height:1.5;font-weight:400;color-scheme:light dark;color:#ffffffde;background-color:#242424;font-synthesis:none;text-rendering:optimizeLegibility;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;-webkit-text-size-adjust:100%}a{font-weight:500;text-decoration:inherit}body{margin:0}h1{font-size:3.2em;line-height:1.1}.card{padding:2em}@media (prefers-color-scheme: light){:root{color:#213547;background-color:#fff}}.menu-list[data-v-503a652d]{margin:0 12px}.menu-list a[data-v-503a652d]{margin-block:5px}.menu-list md-item[data-v-503a652d]{margin-top:10px;font-size:20px;font-weight:600}.menu-list-item[data-v-503a652d]{border-radius:2rem}.app-layout[data-v-9565801e]{background-color:#fef7ff}.layout-header[data-v-9565801e]{position:sticky;top:0;background-color:#fef7ff;color:#fff;padding:1rem;z-index:1000;display:flex}.layout-header .layout-header-left[data-v-9565801e]{flex:1}.layout-container[data-v-9565801e]{display:flex}.layout-menu[data-v-9565801e]{width:300px}.layout-content[data-v-9565801e]{flex:1;padding:2rem;border-radius:28px;background-color:#fff}md-text-button::shadow .button{background:#f2eaf8}md-text-button{border:1px solid transparent}.router-link-active md-text-button{border:1px solid #6750a4;border-radius:20px}pre code.hljs{display:block;overflow-x:auto;padding:1em}code.hljs{padding:3px 5px}/*!
+  Theme: StackOverflow Light
+  Description: Light theme as used on stackoverflow.com
+  Author: stackoverflow.com
+  Maintainer: @Hirse
+  Website: https://github.com/StackExchange/Stacks
+  License: MIT
+  Updated: 2021-05-15
+
+  Updated for @stackoverflow/stacks v0.64.0
+  Code Blocks: /blob/v0.64.0/lib/css/components/_stacks-code-blocks.less
+  Colors: /blob/v0.64.0/lib/css/exports/_stacks-constants-colors.less
+*/.hljs{color:#2f3337;background:#f6f6f6}.hljs-subst{color:#2f3337}.hljs-comment{color:#656e77}.hljs-keyword,.hljs-selector-tag,.hljs-meta .hljs-keyword,.hljs-doctag,.hljs-section,.hljs-attr{color:#015692}.hljs-attribute{color:#803378}.hljs-name,.hljs-type,.hljs-number,.hljs-selector-id,.hljs-quote,.hljs-template-tag{color:#b75501}.hljs-selector-class{color:#015692}.hljs-string,.hljs-regexp,.hljs-symbol,.hljs-variable,.hljs-template-variable,.hljs-link,.hljs-selector-attr{color:#54790d}.hljs-meta,.hljs-selector-pseudo{color:#015692}.hljs-built_in,.hljs-title,.hljs-literal{color:#b75501}.hljs-bullet,.hljs-code{color:#535a60}.hljs-meta .hljs-string{color:#54790d}.hljs-deletion{color:#c02d2e}.hljs-addition{color:#2f6f44}.hljs-emphasis{font-style:italic}.hljs-strong{font-weight:700}
