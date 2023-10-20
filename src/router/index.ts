@@ -42,6 +42,86 @@ const routes = [
         name: 'Button',
         component: () => import('../views/components/button/index.md'),
       },
+      {
+        path: 'checkbox',
+        name: 'Checkbox',
+        component: () => import('../views/components/checkbox/index.md'),
+      },
+      {
+        path: 'chips',
+        name: 'Chips',
+        component: () => import('../views/components/chips/index.md'),
+      },
+      {
+        path: 'dialogs',
+        name: 'Dialogs',
+        component: () => import('../views/components/dialogs/index.md'),
+      },
+      {
+        path: 'floating-action-button',
+        name: 'FloatingActionButton',
+        component: () => import('../views/components/floating-action-button/index.md'),
+      },
+      {
+        path: 'icon-buttons',
+        name: 'IconButtons',
+        component: () => import('../views/components/icon-buttons/index.md'),
+      },
+      {
+        path: 'icon',
+        name: 'Icon',
+        component: () => import('../views/components/icon/index.md'),
+      },
+      {
+        path: 'lists',
+        name: 'Lists',
+        component: () => import('../views/components/lists/index.md'),
+      },
+      {
+        path: 'menus',
+        name: 'Menus',
+        component: () => import('../views/components/menus/index.md'),
+      },
+      {
+        path: 'progress-indicators',
+        name: 'ProgressIndicators',
+        component: () => import('../views/components/progress-indicators/index.md'),
+      },
+      {
+        path: 'radio',
+        name: 'Radio',
+        component: () => import('../views/components/radio/index.md'),
+      },
+      {
+        path: 'ripple',
+        name: 'Ripple',
+        component: () => import('../views/components/ripple/index.md'),
+      },
+      {
+        path: 'select',
+        name: 'Select',
+        component: () => import('../views/components/select/index.md'),
+      },
+      {
+        path: 'sliders',
+        name: 'Sliders',
+        component: () => import('../views/components/sliders/index.md'),
+      },
+      {
+        path: 'switch',
+        name: 'Switch',
+        component: () => import('../views/components/switch/index.md'),
+      },
+      {
+        path: 'tabs',
+        name: 'Tabs',
+        component: () => import('../views/components/tabs/index.md'),
+      },
+      {
+        path: 'text-field',
+        name: 'TextField',
+        component: () => import('../views/components/text-field/index.md'),
+      },
     ]
   },
   {
