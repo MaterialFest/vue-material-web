@@ -14,12 +14,17 @@ const routes = [
       {
         path: 'intro',
         name: 'Intro',
-        component: () => import('../views/about/intro/Index.vue'),
+        component: () => import('../views/about/intro/index.md'),
       },
       {
         path: 'quick-start',
         name: 'QuickStart',
-        component: () => import('../views/about/quick-start/Index.vue'),
+        component: () => import('../views/about/quick-start/index.md'),
+      },
+      {
+        path: 'support',
+        name: 'Support',
+        component: () => import('../views/about/support/index.md'),
       },
       {
         path: 'resources',

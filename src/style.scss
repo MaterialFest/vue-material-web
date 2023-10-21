@@ -4,7 +4,6 @@
   font-weight: 400;
 
   color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
   background-color: #242424;
 
   font-synthesis: none;
@@ -12,6 +11,12 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
+}
+
+// 定义elevation组件的样式
+:root {
+  --md-elevation-level: 5;
+  --md-sys-color-shadow: #b9b9b9;
 }
 
 a {
@@ -28,9 +33,32 @@ h1 {
   line-height: 1.1;
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
+// markdown样式
+.markdown-body {
+  table {
+    display: block;
+    width: 100%;
+    width: max-content;
+    max-width: 100%;
+    overflow: auto;
+    border-spacing: 0;
+    border-collapse: collapse;
+    margin-top: 0;
+    margin-bottom: 16px;
+
+    tr {
+      background-color: #ffffff;
+      border-top: #d0d7de;
+    }
+
+    th,
+    td {
+      padding: 6px 13px;
+      border: 1px solid #d0d7de;
+    }
+
+    tr:nth-child(2n) {
+      background-color: #f6f8fa;
+    }
   }
 }

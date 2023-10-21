@@ -5,6 +5,7 @@ import Menu from './views/layout/Menu.vue';
 <template>
   <div class="app-layout">
     <header class="layout-header">
+      <md-elevation></md-elevation>
       <div class="layout-header-left">
         <router-link to="/">
           <md-icon-button>
@@ -26,14 +27,9 @@ import Menu from './views/layout/Menu.vue';
         <router-link to="/docs/blog">
           <md-text-button>博客</md-text-button>
         </router-link>
+        <!-- 打开github地址 -->
         <a href="https://www.github.com/MaterialFE/vue-material-web/" target="_blank">
-          <md-text-button trailing-icon>
-            github
-            <svg slot="icon" viewBox="0 0 48 48">
-              <path
-                d="M9 42q-1.2 0-2.1-.9Q6 40.2 6 39V9q0-1.2.9-2.1Q7.8 6 9 6h13.95v3H9v30h30V25.05h3V39q0 1.2-.9 2.1-.9.9-2.1.9Zm10.1-10.95L17 28.9 36.9 9H25.95V6H42v16.05h-3v-10.9Z" />
-            </svg>
-          </md-text-button>
+          <md-icon-button><md-icon>open_in_new</md-icon></md-icon-button>
         </a>
       </div>
     </header>
@@ -50,6 +46,10 @@ import Menu from './views/layout/Menu.vue';
 
 <style scoped lang="scss">
 .app-layout {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
   background-color: #fef7ff;
 }
 
@@ -58,22 +58,28 @@ import Menu from './views/layout/Menu.vue';
   top: 0;
   background-color: #fef7ff;
   color: #ffffff;
-  padding: 1rem;
+  padding: 10px;
   z-index: 1000;
   display: flex;
 
   .layout-header-left {
     flex: 1;
   }
+
+  md-icon {
+    color: #6750a4;
+  }
 }
 
-
 .layout-container {
+  flex: 1;
   display: flex;
+  overflow: auto;
 }
 
 .layout-menu {
   width: 300px;
+  overflow: auto;
 }
 
 .layout-content {
@@ -81,6 +87,7 @@ import Menu from './views/layout/Menu.vue';
   padding: 2rem;
   border-radius: 28px;
   background-color: #ffffff;
+  overflow: auto;
 }
 </style>
 

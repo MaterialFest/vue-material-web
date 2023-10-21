@@ -2,6 +2,7 @@
 const aboutRouterList = [
   { url: '/about/intro', name: '介绍' },
   { url: '/about/quick-start', name: '快速上手' },
+  { url: '/about/support', name: '支持' },
   { url: '/about/resources', name: '资源' },
 ];
 const componentRouterList = [
