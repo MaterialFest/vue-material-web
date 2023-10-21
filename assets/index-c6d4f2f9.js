@@ -1,0 +1,1 @@
+import{d as t,o,c as s,a as n}from"./index-56c72d18.js";const a={class:"markdown-body"},c=n("h1",null,"Vue Material Web",-1),r=[c],m={},l="",f=t({__name:"index",setup(_,{expose:e}){return e({frontmatter:{},excerpt:void 0}),(d,i)=>(o(),s("div",a,r))}});export{f as default,l as excerpt,m as frontmatter};
