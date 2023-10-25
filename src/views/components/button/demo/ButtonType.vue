@@ -2,6 +2,23 @@
 </script>
 
 <template>
+  <div>
+    <md-elevated-button>
+      Elevated
+    </md-elevated-button>
+    <md-elevated-button>
+      Elevated
+    </md-elevated-button>
+    <md-elevated-button>
+      Elevated
+    </md-elevated-button>
+    <md-elevated-button>
+      Elevated
+    </md-elevated-button>
+    <md-elevated-button>
+      Elevated
+    </md-elevated-button>
+  </div>
   <md-outlined-button>Back</md-outlined-button>
   <md-filled-button>Complete</md-filled-button>
   <md-text-button trailing-icon>

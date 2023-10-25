@@ -1,5 +1,5 @@
 <script setup>
-import ButtonType from './ButtonType.vue';
+import ButtonType from './demo/ButtonType.vue';
 import Preview from '@/components/Preview.vue';
 </script>
 
@@ -19,4 +19,4 @@ There are five types of common buttons: elevated, filled, filled tonal, outlined
 4. Outlined button
 5. Text button
 
-<Preview :comp="ButtonType" comp-path="button/ButtonType" />
+<Preview :comp="ButtonType" comp-path="button/demo/ButtonType" />

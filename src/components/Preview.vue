@@ -44,11 +44,13 @@ const copyContent = (text: string) => {
   navigator.clipboard.writeText(text)
 }
 
-const getSourceCode = async () => {
-  let msg = await import(
-      /* @vite-ignore */ `/src/views/components/${props.compPath}.vue?raw`
-  )
-  sourceCode.value = msg.default
+const getSourceCode = () => {
+  let components = import.meta.glob(`/src/views/components/*/demo/*.vue`, { as: 'raw', eager: true })
+  for (let componentKey in components) {
+    if (componentKey.indexOf(props.compPath) !== -1) {
+      sourceCode.value = components[componentKey]
+    }
+  }
 };
 
 onMounted(() => {

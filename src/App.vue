@@ -34,12 +34,7 @@ import Menu from './views/layout/Menu.vue';
       </div>
     </header>
     <main class="layout-container">
-      <nav class="layout-menu">
-        <Menu />
-      </nav>
-      <div class="layout-content">
-        <router-view></router-view>
-      </div>
+      <router-view></router-view>
     </main>
   </div>
 </template>

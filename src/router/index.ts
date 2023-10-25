@@ -4,12 +4,12 @@ const routes = [
   {
     path: '/',
     name: 'Home',
-    component: () => import('../views/home/index.md'),
+    component: () => import('../views/home/Index.vue'),
   },
   {
     path: '/about',
     name: 'About',
-    component: () => import('../views/about/Index.vue'),
+    component: () => import('../views/layout/Index.vue'),
     children: [
       {
         path: 'intro',
@@ -20,6 +20,11 @@ const routes = [
         path: 'quick-start',
         name: 'QuickStart',
         component: () => import('../views/about/quick-start/index.md'),
+      },
+      {
+        path: 'roadmap',
+        name: 'Roadmap',
+        component: () => import('../views/about/roadmap/index.md'),
       },
       {
         path: 'support',
@@ -36,7 +41,7 @@ const routes = [
   {
     path: '/components',
     name: 'Components',
-    component: () => import('../views/components/Index.vue'),
+    component: () => import('../views/layout/Index.vue'),
     children: [
       {
         path: '',
