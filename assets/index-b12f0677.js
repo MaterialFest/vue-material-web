@@ -1,1 +1,0 @@
-import{d as e,o,c as n,a as s}from"./index-56c72d18.js";const a={class:"markdown-body"},c=s("h2",null,"floating action button",-1),r=[c],m={},l="",f=e({__name:"index",setup(_,{expose:t}){return t({frontmatter:{},excerpt:void 0}),(d,i)=>(o(),n("div",a,r))}});export{f as default,l as excerpt,m as frontmatter};
