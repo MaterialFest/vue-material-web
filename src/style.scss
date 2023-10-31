@@ -13,8 +13,15 @@
   -webkit-text-size-adjust: 100%;
 }
 
-// 定义elevation组件的样式
+// 定义@material/web样式
 :root {
+  // 定义button组件的样式
+  --md-sys-color-primary: #146286;
+  --md-sys-color-secondary-container: #c1dcf3;
+  --md-sys-color-surface-container-low: #f1f4f9;
+  // 定义list组件的样式
+  --md-list-container-color: #ebeef3;
+  // 定义elevation组件的样式
   --md-elevation-level: 5;
   --md-sys-color-shadow: #b9b9b9;
 }
@@ -24,7 +31,8 @@ a {
   text-decoration: inherit;
 }
 
-body {
+body,
+figure {
   margin: 0;
 }
 
@@ -65,5 +73,13 @@ h1 {
     tr:nth-child(2n) {
       background-color: #f6f8fa;
     }
+  }
+
+  code {
+    display: inline-flex;
+    background-color: #dbe3ed;
+    padding: 4px;
+    border-radius: 8px;
+    font-size: 14px;
   }
 }

@@ -44,13 +44,13 @@
   display: flex;
   flex-direction: column;
   height: 100vh;
-  background-color: #fef7ff;
+  background-color: #ebeef3;
 }
 
 .layout-header {
   position: sticky;
   top: 0;
-  background-color: #fef7ff;
+  background-color: #ebeef3;
   color: #ffffff;
   padding: 10px;
   z-index: 1000;
@@ -60,8 +60,12 @@
     flex: 1;
   }
 
+  md-icon-button svg {
+    color: #146286;
+  }
+
   md-icon {
-    color: #6750a4;
+    color: #146286;
   }
 }
 
@@ -95,7 +99,7 @@ md-text-button {
 }
 
 .router-link-active md-text-button {
-  border: 1px solid #6750a4;
+  border: 1px solid #146286;
   border-radius: 20px;
 }
 </style>

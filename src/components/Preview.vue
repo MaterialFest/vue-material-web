@@ -68,8 +68,8 @@ onMounted(() => {
 .preview-btn {
   text-align: right;
   border-top: 1px dashed #707882;
-  margin-top: 10px;
-  padding-top: 10px;
+  margin-top: 20px;
+  padding-top: 20px;
 }
 
 pre {

@@ -65,6 +65,6 @@ const componentRouterList = [
 }
 
 .router-link-active .menu-list-item {
-  background-color: #ffe4e4;
+  background-color: #dfe3e8;
 }
 </style>
