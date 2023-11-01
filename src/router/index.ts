@@ -12,6 +12,10 @@ const routes = [
     component: () => import('../views/layout/Index.vue'),
     children: [
       {
+        path: '',
+        redirect: '/about/intro',
+      },
+      {
         path: 'intro',
         name: 'Intro',
         component: () => import('../views/about/intro/index.md'),

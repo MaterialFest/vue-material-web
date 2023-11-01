@@ -6,7 +6,6 @@
 
 #### 未启动
 
-*   💤 Checkbox 多选框
 *   💤 Chips 纸片
 *   💤 Dialogs 对话框
 *   💤 Floating action button (FAB) 浮动按钮
@@ -25,8 +24,9 @@
 
 #### 正在进行
 
-*   🟡 Button 按钮
 *   🟡 Icon 图标
 
 #### 完成
 
+*   ✅ Button 按钮
+*   ✅ Checkbox 多选框

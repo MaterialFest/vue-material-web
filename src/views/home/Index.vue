@@ -44,7 +44,7 @@
 
 .base-card {
   width: 300px;
-  background-color: #fef7ff;
+  background-color: #ebeef3;
   padding: 20px;
   border-radius: 20px;
   color: #000000;

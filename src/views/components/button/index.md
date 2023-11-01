@@ -2,6 +2,7 @@
 import Preview from '@/components/Preview.vue';
 import ButtonType from './demo/ButtonType.vue';
 import ButtonIcon from './demo/ButtonIcon.vue';
+import ButtonDisabled from './demo/ButtonDisabled.vue';
 import ButtonElevatedTheme from './demo/ButtonElevatedTheme.vue';
 import ButtonFilledTheme from './demo/ButtonFilledTheme.vue';
 import ButtonFilledToanlTheme from './demo/ButtonFilledTonalTheme.vue';
@@ -30,6 +31,10 @@ There are five types of common buttons: elevated, filled, filled tonal, outlined
 ### Icon
 
 <Preview :comp="ButtonIcon" comp-path="button/demo/ButtonIcon" />
+
+### disabled
+
+<Preview :comp="ButtonDisabled" comp-path="button/demo/ButtonDisabled" />
 
 ### Elevated 自定义样式
 

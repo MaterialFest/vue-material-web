@@ -20,6 +20,9 @@
         </router-link>
       </div>
       <div class="layout-header-right">
+        <router-link to="/about">
+          <md-text-button>关于</md-text-button>
+        </router-link>
         <router-link to="/components">
           <md-text-button>组件</md-text-button>
         </router-link>
