@@ -1,1 +1,0 @@
-import{f as t,o,c as s,a as n}from"./index-eb2ecc0b.js";const c={class:"markdown-body"},r=n("h2",null,"sliders",-1),a=[r],m={},l="",f=t({__name:"index",setup(_,{expose:e}){return e({frontmatter:{},excerpt:void 0}),(d,i)=>(o(),s("div",c,a))}});export{f as default,l as excerpt,m as frontmatter};
