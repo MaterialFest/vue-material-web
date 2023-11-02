@@ -13,6 +13,7 @@
     "@material/web": "^1.0.0",
     "highlight.js": "^11.9.0",
     "vue": "^3.3.4",
+    "vue-i18n": "^9.6.4",
     "vue-router": "^4.2.5"
   },
   "devDependencies": {

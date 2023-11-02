@@ -1,4 +1,9 @@
 <script setup lang="ts">
+import { useI18n } from 'vue-i18n'
+
+const { t } = useI18n()
+
+console.log(t('home.material_desc'))
 </script>
 
 <template>
@@ -11,16 +16,16 @@
       </router-link>
     </div>
     <div class="base-tab">
-      <a class="base-card" target="_blank" href="https://m3.material.io/">
+      <a class="base-card" target="_blank" href="https://material.io/">
         <div class="base-card-title">Material</div>
         <div class="base-card-description">
-          Material 3是谷歌开源设计系统的最新版本。
+          {{ $t('home.material_desc') }}
         </div>
       </a>
       <a class="base-card" target="_blank" href="https://vuejs.org/">
         <div class="base-card-title">Vue</div>
         <div class="base-card-description">
-          渐进式JavaScript框架
+          {{ $t('home.vue_desc') }}
         </div>
       </a>
     </div>

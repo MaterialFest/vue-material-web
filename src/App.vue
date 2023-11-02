@@ -1,4 +1,29 @@
 <script setup lang="ts">
+import { ref } from 'vue'
+import { useI18n } from 'vue-i18n'
+const { locale } = useI18n()
+
+const translateMenu = ref(false)
+const translateLang = ref('')
+
+translateLang.value = localStorage.getItem('lang') || 'zh'
+
+// 切换语言
+const changeTranslate = () => {
+  translateMenu.value = !translateMenu.value;
+}
+
+// 关闭menu时的回调
+const closedMenu = () => {
+  translateMenu.value = false;
+}
+
+// 选择语言
+const selectedLang = (lang: string) => {
+  locale.value = lang
+  translateLang.value = lang
+  localStorage.setItem('lang', lang)
+}
 </script>
 
 <template>
@@ -29,6 +54,17 @@
         <router-link to="/docs/blog">
           <md-text-button>博客</md-text-button>
         </router-link>
+        <!-- 切换语言 -->
+        <md-icon-button id="translate-anchor" @click="changeTranslate()"><md-icon>translate</md-icon></md-icon-button>
+        <md-menu id="translate-menu" anchor="translate-anchor" :open="translateMenu" v-on:closed="closedMenu()"
+          :xOffset="55" :yOffset="20">
+          <md-menu-item :selected="translateLang === 'zh'" @click="selectedLang('zh')">
+            <div slot="headline">中文</div>
+          </md-menu-item>
+          <md-menu-item :selected="translateLang === 'en'" @click="selectedLang('en')">
+            <div slot="headline">English</div>
+          </md-menu-item>
+        </md-menu>
         <!-- 打开github地址 -->
         <a href="https://www.github.com/MaterialFE/vue-material-web/" target="_blank">
           <md-icon-button><md-icon>open_in_new</md-icon></md-icon-button>
